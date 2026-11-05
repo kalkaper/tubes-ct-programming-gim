@@ -14,6 +14,9 @@ var floor_rect := Rect2i()
 @onready var tilemap: TileMapLayer = $"../TileMapLayer"
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var rock_manager: RockManager = $"../RockManager"
+@onready var BreakSFX: AudioStreamPlayer = $break_sfx
+@onready var pushSFX: AudioStreamPlayer = $push_sfx
+@onready var death_sfx: AudioStreamPlayer = $death_sfx
 
 func _ready() -> void:
 	position = grid_to_world(current_grid_pos)
@@ -55,8 +58,10 @@ func move_to_grid(target_grid_pos: Vector2i) -> void:
 		var push_dir := target_grid_pos - current_grid_pos
 		if not rock_manager.try_push(target_grid_pos, target_grid_pos + push_dir):
 			return
+			pushSFX.play()
 	elif source != -1:
 		tilemap.erase_cell(target_grid_pos)
+		BreakSFX.play()
 
 	sprite.play("default")
 
@@ -76,4 +81,6 @@ func die(reason: String = "unknown") -> void:
 	sprite.stop()
 	modulate = Color(1, 0.25, 0.25)
 	print("Player died — ", reason)
+	death_sfx.play()
+	await get_tree().create_timer(0.5).timeout
 	died.emit()

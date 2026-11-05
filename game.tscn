@@ -7,8 +7,13 @@
 [ext_resource type="Script" uid="uid://d0vmkqw3fxghh" path="res://rock_manager.gd" id="4_rock"]
 [ext_resource type="Script" uid="uid://bgfjcqyrdc7hb" path="res://enemy.gd" id="5_enemy"]
 [ext_resource type="Script" uid="uid://dfxvb7agtwdai" path="res://game.gd" id="6_game"]
+[ext_resource type="AudioStream" uid="uid://7vk0yxcdp82u" path="res://Audio/Rooted_Dirt_break1.ogg.mp3" id="6_iotsf"]
+[ext_resource type="AudioStream" uid="uid://wb3vx1odk5go" path="res://Audio/freesound_community-stoneblockdragwoodgrind-82327.mp3" id="7_lc2xo"]
 [ext_resource type="Texture2D" uid="uid://cumapaglmcd4u" path="res://texture/UI/reset.png" id="7_reset"]
+[ext_resource type="AudioStream" uid="uid://dog0cryo3jeuj" path="res://Audio/buzzer_rpg.wav" id="8_215e1"]
 [ext_resource type="Texture2D" uid="uid://tck0upqghqgx" path="res://texture/UI/redo.png" id="8_redo"]
+[ext_resource type="AudioStream" uid="uid://bwqrva70oqnku" path="res://Audio/confirm_rpg.wav" id="10_mfdv2"]
+[ext_resource type="AudioStream" uid="uid://ror1hm4ue04w" path="res://Audio/Platformer 5 - Looped - Pure.wav" id="11_iotsf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ryrav"]
 texture = ExtResource("1_feb5d")
@@ -442,6 +447,16 @@ shape = SubResource("RectangleShape2D_jgwcy")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=781204167]
 position_smoothing_enabled = true
 
+[node name="break_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1688968840]
+stream = ExtResource("6_iotsf")
+
+[node name="push_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1263602180]
+stream = ExtResource("7_lc2xo")
+volume_db = 6.0
+
+[node name="death_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1658972805]
+stream = ExtResource("8_215e1")
+
 [node name="RockManager" type="Node2D" parent="." unique_id=358102477]
 script = ExtResource("4_rock")
 
@@ -507,3 +522,13 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("8_redo")
 stretch_mode = 0
+
+[node name="Confirm SFX" type="AudioStreamPlayer" parent="UI" unique_id=741165951]
+stream = ExtResource("10_mfdv2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=545350882]
+stream = ExtResource("11_iotsf")
+autoplay = true
+
+[connection signal="pressed" from="UI/RestartUI/ResetButton" to="UI/Confirm SFX" method="play"]
+[connection signal="pressed" from="UI/RestartUI/RedoButton" to="UI/Confirm SFX" method="play"]
