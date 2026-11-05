@@ -5,6 +5,7 @@ func _ready() -> void:
 	$RandomButton.pressed.connect(_on_random_pressed)
 
 func _on_random_pressed() -> void:
+	get_tree().change_scene_to_file("res://random_menu.tscn")
 	print("bump")
 
 func _on_play_pressed() -> void:
