@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ror1hm4ue04w"
+path="res://.godot/imported/Platformer 5 - Looped - Pure.wav-61ab85e3f8f3cb7f54b6a6175696cb79.sample"
+
+[deps]
+
+source_file="res://Audio/Platformer 5 - Looped - Pure.wav"
+dest_files=["res://.godot/imported/Platformer 5 - Looped - Pure.wav-61ab85e3f8f3cb7f54b6a6175696cb79.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

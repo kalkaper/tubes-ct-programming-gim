@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://h36ch3vgrw2m"]
+
+[ext_resource type="Script" uid="uid://cq0d4v45736tt" path="res://random_menu.gd" id="1_5g7ye"]
+[ext_resource type="Texture2D" uid="uid://ve74pdolbc3m" path="res://texture/UI/back_arrow.png" id="1_0411l"]
+[ext_resource type="AudioStream" uid="uid://bwqrva70oqnku" path="res://Audio/confirm_rpg.wav" id="3_pempl"]
+
+[node name="RandomMenu" type="Control" unique_id=1873173514]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5g7ye")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=408234863]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.07058824, 0.078431375, 0.12941177, 1)
+
+[node name="BackButton" type="TextureButton" parent="." unique_id=1342696466]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 144.0
+texture_normal = ExtResource("1_0411l")
+stretch_mode = 0
+
+[node name="SeedInput" type="LineEdit" parent="." unique_id=2014607344]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 292.0
+offset_right = 832.0
+offset_bottom = 356.0
+placeholder_text = "Insert seed (keep blank for random seed)"
+alignment = 1
+virtual_keyboard_enabled = false
+
+[node name="ConfirmRandomMenu" type="AudioStreamPlayer" parent="." unique_id=910753512]
+stream = ExtResource("3_pempl")
+
+[connection signal="pressed" from="BackButton" to="ConfirmRandomMenu" method="play"]
+[connection signal="text_submitted" from="SeedInput" to="." method="_on_seed_input_text_submitted"]
