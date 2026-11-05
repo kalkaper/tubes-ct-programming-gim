@@ -1,8 +1,4 @@
-res://random_menu.tscn
-res://random_menu.gd
 res://main_menu.gd
-res://main_menu.tscn
-res://random_game.tscn
-res://random_game.gd
+res://game.tscn
+res://random_menu.gd
 res://random_tile_map_layer.gd
-res://game_state.gd

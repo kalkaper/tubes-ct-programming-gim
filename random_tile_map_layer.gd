@@ -18,10 +18,10 @@ func _ready() -> void:
 	for i in range(tiles.size()):
 		var x = round(tiles[i] / 8)
 		var y = tiles[i] % 8
-		if i < 14 and tiles[i] != 13 and tiles[i] != 63:
+		if i < 14 and tiles[i] != 104 and tiles[i] != 60:
 			# turn this to rock
+			# player tile and enemy tile cant be rock
 			set_cell(Vector2i(x + 1, y + 1), 1, Vector2i(4, 2))
 		else:
 			# turn this to dirt
-			# player tile and enemy tile is always dirt
 			set_cell(Vector2i(x + 1, y + 1), 0, Vector2i(randi_range(19, 20), 5))

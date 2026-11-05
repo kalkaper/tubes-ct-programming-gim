@@ -23,8 +23,7 @@ func _ready() -> void:
 	$SeedInput.text_submitted.connect(_on_seed_input_submitted)
 
 func _on_seed_input_submitted(string_seed: String) -> void:
-	var seed = convert_to_int(string_seed)
-	GameState.current_seed = seed
+	GameState.current_seed = convert_to_int(string_seed)
 	get_tree().change_scene_to_file("res://random_game.tscn")
 
 func _on_back_pressed():
