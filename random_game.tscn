@@ -8,8 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://d1pe0143p3f48" path="res://texture/sprite/8x8chars_main-Sheet.png" id="5_u0r1r"]
 [ext_resource type="Script" uid="uid://d0vmkqw3fxghh" path="res://rock_manager.gd" id="6_xj021"]
 [ext_resource type="Script" uid="uid://bgfjcqyrdc7hb" path="res://enemy.gd" id="7_gr81f"]
+[ext_resource type="AudioStream" uid="uid://7vk0yxcdp82u" path="res://Audio/Rooted_Dirt_break1.ogg.mp3" id="7_u0r1r"]
 [ext_resource type="Texture2D" uid="uid://cumapaglmcd4u" path="res://texture/UI/reset.png" id="8_gt8iv"]
+[ext_resource type="AudioStream" uid="uid://wb3vx1odk5go" path="res://Audio/freesound_community-stoneblockdragwoodgrind-82327.mp3" id="8_xj021"]
+[ext_resource type="AudioStream" uid="uid://dog0cryo3jeuj" path="res://Audio/buzzer_rpg.wav" id="9_gr81f"]
 [ext_resource type="Texture2D" uid="uid://tck0upqghqgx" path="res://texture/UI/redo.png" id="9_pm8ps"]
+[ext_resource type="AudioStream" uid="uid://bwqrva70oqnku" path="res://Audio/confirm_rpg.wav" id="14_gr81f"]
+[ext_resource type="AudioStream" uid="uid://ror1hm4ue04w" path="res://Audio/Platformer 5 - Looped - Pure.wav" id="15_gt8iv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ryrav"]
 texture = ExtResource("2_uebgb")
@@ -444,6 +449,16 @@ shape = SubResource("RectangleShape2D_jgwcy")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=781204167]
 position_smoothing_enabled = true
 
+[node name="break_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1290968156]
+stream = ExtResource("7_u0r1r")
+
+[node name="push_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=757523793]
+stream = ExtResource("8_xj021")
+volume_db = 6.0
+
+[node name="death_sfx" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1328634530]
+stream = ExtResource("9_gr81f")
+
 [node name="RockManager" type="Node2D" parent="." unique_id=358102477]
 script = ExtResource("6_xj021")
 
@@ -509,3 +524,10 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("9_pm8ps")
 stretch_mode = 0
+
+[node name="Confirm SFX" type="AudioStreamPlayer" parent="UI" unique_id=1537355080]
+stream = ExtResource("14_gr81f")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=489555124]
+stream = ExtResource("15_gt8iv")
+autoplay = true

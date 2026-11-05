@@ -1,0 +1,34 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1793897407
+enemy.gd::GDScript::2818426537039737551::1793624836::0::1::::Enemy<>CharacterBody2D<><>0<>0<><>::
+game.gd::GDScript::7558965481300916276::1793897404::0::1::::<>Node2D<><>0<>0<><>::
+game.tscn::PackedScene::304591715044180275::1793897407::0::1::::<><><>0<>0<><>::uid://d2y6xk6xs3ann::::res://texture/background/The Platformer v1-0.png<>uid://gjydr5k3jq0q::::res://texture/background/Rocktexture-Sheet.png<>uid://80kl10p8d3vr::::res://player.gd<>uid://d1pe0143p3f48::::res://texture/sprite/8x8chars_main-Sheet.png<>uid://d0vmkqw3fxghh::::res://rock_manager.gd<>uid://bgfjcqyrdc7hb::::res://enemy.gd<>uid://dfxvb7agtwdai::::res://game.gd<>uid://cumapaglmcd4u::::res://texture/UI/reset.png<>uid://tck0upqghqgx::::res://texture/UI/redo.png
+game_state.gd::GDScript::3820326119954345479::1793897404::0::1::::<>Node<><>0<>0<><>::
+icon.svg::CompressedTexture2D::1790880795757653::1793624836::1793896830::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main_menu.gd::GDScript::7436116705410224552::1793897407::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::4587590323869171153::1793897407::0::1::::<><><>0<>0<><>::uid://bxdhbworh5i4b::::res://texture/UI/play.png<>uid://dd7d0xulu845q::::res://main_menu.gd<>uid://cx8bqy32e2a75::::res://texture/UI/continue_button.png<>uid://dbppptlomwee2::::res://texture/UI/continue_pressed.png<>uid://dlxaxr4t6ngjw::::res://texture/UI/Continue_hovered.png<>uid://v7btgn0x6gl7::::res://texture/UI/info.png
+player.gd::GDScript::2368469502520177171::1793897407::0::1::::GridPlayer<>CharacterBody2D<><>0<>0<><>::
+random_game.gd::GDScript::8678748096911275167::1793897404::0::1::::<>Node2D<><>0<>0<><>::
+random_game.tscn::PackedScene::3763052337641546648::1793897404::0::1::::<><><>0<>0<><>::
+random_menu.gd::GDScript::5947707397644399605::1793897404::0::1::::<>Control<><>0<>0<><>::
+random_menu.tscn::PackedScene::551010692824301698::1793897404::0::1::::<><><>0<>0<><>::
+random_tile_map_layer.gd::GDScript::7027669037923626572::1793897404::0::1::::<>TileMapLayer<><>0<>0<><>::
+rock_manager.gd::GDScript::8958082412356698773::1793897404::0::1::::RockManager<>Node2D<><>0<>0<><>::
+::res://Audio/::1793897404
+buzzer_rpg.wav::AudioStreamWAV::8155814555589217417::1793897404::1793897408::1::::<><><>0<>0<>3386ae21d642e36272225daf8300031d<>res://.godot/imported/buzzer_rpg.wav-dfce2b03994b8e20fa50a281aa8356b4.sample::
+confirm_rpg.wav::AudioStreamWAV::3964675028932782492::1793897404::1793897408::1::::<><><>0<>0<>275a772fd9f66b514b8f326671e3de0a<>res://.godot/imported/confirm_rpg.wav-8825fd6e369f3ce72fca14d955fafa2e.sample::
+freesound_community-stoneblockdragwoodgrind-82327.mp3::AudioStreamMP3::1547957764102737042::1793897404::1793897408::1::::<><><>0<>0<>47127ec3c4d71ba0d2a9393cf0905f4e<>res://.godot/imported/freesound_community-stoneblockdragwoodgrind-82327.mp3-7fbd07917c46b2d6b033cec4731822ba.mp3str::
+Platformer 5 - Looped - Pure.wav::AudioStreamWAV::1223190637467589716::1793897404::1793897409::1::::<><><>0<>0<>3de2dc90eecc5634475b128a8976dae4<>res://.godot/imported/Platformer 5 - Looped - Pure.wav-61ab85e3f8f3cb7f54b6a6175696cb79.sample::
+Rooted_Dirt_break1.ogg.mp3::AudioStreamMP3::2290048040213992150::1793897404::1793897408::1::::<><><>0<>0<>aec649e0b550795c3bcd0aeb9b72f578<>res://.godot/imported/Rooted_Dirt_break1.ogg.mp3-d2d2211e0566bee16347845358a816db.mp3str::
+::res://texture/::1793671288
+::res://texture/background/::1793896830
+Rocktexture-Sheet.png::CompressedTexture2D::441175966556071786::1793624836::1793896830::1::::<><><>0<>0<>847e3be2565e8fbb102d5d6e8a4786a5<>res://.godot/imported/Rocktexture-Sheet.png-d33cfc1f95d5093b6d670cdf1d3a0242.ctex::
+The Platformer v1-0.png::CompressedTexture2D::9105829769631793255::1793624836::1793896830::1::::<><><>0<>0<>7799fdb909fcfadeacaf087716c2943d<>res://.godot/imported/The Platformer v1-0.png-66652005b42849fca82a9137af159b22.ctex::
+::res://texture/sprite/::1793896830
+8x8chars_main-Sheet.png::CompressedTexture2D::9015426576497506079::1793624836::1793896830::1::::<><><>0<>0<>dc62d4f587e2f93625bd13437a229675<>res://.godot/imported/8x8chars_main-Sheet.png-c37759f691738b4cc2b1909a119ce661.ctex::
+::res://texture/UI/::1793897404
+back_arrow.png::CompressedTexture2D::1484218752342191620::1793897404::1793897408::1::::<><><>0<>0<>8e63d06d4328e73f02c7a466750218d5<>res://.godot/imported/back_arrow.png-9480e913ba82251878ec8d80de502dce.ctex::
+play.png::CompressedTexture2D::4007385203297206267::1793624836::1793896830::1::::<><><>0<>0<>e43a47dd57bbf6913d81623c94eca7ba<>res://.godot/imported/play.png-b411ec338587ac3713ce47b90e2b76a9.ctex::
+random.png::CompressedTexture2D::7142102039649978790::1793897404::1793897408::1::::<><><>0<>0<>126d33f59fc64d18ba654ba8285ccf26<>res://.godot/imported/random.png-45be4e71ca26da897bcd2ad32a8bb71f.ctex::
+redo.png::CompressedTexture2D::1338369673780369659::1793624836::1793896830::1::::<><><>0<>0<>74332a0df4a93d428a9aa6a80fec5ddc<>res://.godot/imported/redo.png-6f8206266a28bc81b3d9282d37a04dda.ctex::
+reset.png::CompressedTexture2D::6201417569888875818::1793624836::1793896830::1::::<><><>0<>0<>43f2f7262de3efa1fedfa059a7ee7ad3<>res://.godot/imported/reset.png-2633f2735855f7717263ab8a95d46e84.ctex::

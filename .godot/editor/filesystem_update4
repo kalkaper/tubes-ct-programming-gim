@@ -1,0 +1,7 @@
+res://game.gd
+res://main_menu.gd
+res://player.gd
+res://rock_manager.gd
+res://random_game.tscn
+res://random_menu.gd
+res://random_tile_map_layer.gd
