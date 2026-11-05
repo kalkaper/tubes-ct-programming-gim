@@ -95,3 +95,23 @@ func _crush_check(cell: Vector2i) -> void:
 
 func _player_cell() -> Vector2i:
 	return tilemap.local_to_map(tilemap.to_local(player.global_position))
+
+
+# save... n load... 
+
+func get_save_data() -> Array:
+	var out := []
+	for rock in _rocks:
+		out.append({"cell": rock.cell, "state": rock.state, "timer": rock.timer})
+	return out
+
+
+func load_save_data(data: Array) -> void:
+	# rebuild the list from the save instead of re-scanning the tilemap so rocks that were mid-fall keep their state and timers.
+	_rocks.clear()
+	for entry in data:
+		var rock := Rock.new()
+		rock.cell = entry["cell"]
+		rock.state = entry["state"]
+		rock.timer = entry["timer"]
+		_rocks.append(rock)
